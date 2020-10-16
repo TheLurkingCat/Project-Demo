@@ -50,7 +50,7 @@ void send_json_custom(char const *send_buf, int port, int timeout);
 }
 
 class Detector {
-   public:
+  public:
     // Imported from darknet.dll
     Detector(std::string cfg_filename, std::string weight_filename, int gpu_id = 0);
     ~Detector();
@@ -127,7 +127,7 @@ class Detector {
     float nms = 0.4f;
     // -------------------------------------------------------------------------
 
-   private:
+  private:
     static image_t mat_to_image_custom(cv::Mat mat) {
         int w = mat.cols;
         int h = mat.rows;
